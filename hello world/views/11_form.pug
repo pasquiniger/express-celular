@@ -1,0 +1,21 @@
+html
+	head
+		title Form Tester
+	body
+		// La ruta de form action es la misma que del post
+
+		form(action = "/form", method = "POST")
+			div
+				label(for = "say") Say:
+				input(name = "say" value = "Hi")
+			br
+			div
+				label(for = "to") To:
+				input(name = "to" value = "Express forms")
+			br
+			div
+				// los valores de for no deben escribirse con espacios, ¿salvo que tenga varios valores?
+				label(for = "comidaFavorita") Que mierda comiste:
+				input(name = "comidaFavorita" value = "Pescado")
+			br
+			button(type = "submit") Send my greetings
